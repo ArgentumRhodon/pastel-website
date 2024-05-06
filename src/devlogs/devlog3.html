@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Team Pastel - Devlog 3</title>
+  </head>
+  <body>
+    <header>
+      <div class="flex justify-center p-8 bg-devPage">
+        <img src="../imgs/title.png" alt="" class="max-w-[630px] w-full" />
+      </div>
+      <nav class="flex justify-center items-center p-2">
+        <div class="prose prose-sm lg:prose-lg w-[630px]">
+          <a href="../index.html">Home</a>
+          <i class="fa-solid fa-arrow-right"></i>
+          <a href="../devlog.html">Devlogs</a>
+          <i class="fa-solid fa-arrow-right"></i>
+          <a href="./devlog3.html">Devlog 3</a>
+        </div>
+      </nav>
+    </header>
+    <main class="flex justify-center my-8 p-2">
+      <section class="prose prose-sm lg:prose-lg">
+        <h1>Devlog 3: Slime Time</h1>
+        <h2>The Player Character</h2>
+        <p>
+          We explored 21 different player character concepts drafted up by our
+          artist, culminating in the selection of our charming slime as the
+          central character design. We chose the slime due to the relative
+          simplicity of rigging and overall cuteness, and we think plushies are
+          definitely in order.
+        </p>
+        <img src="../imgs/ccd.png" alt="" />
+        <img src="../imgs/char.png" alt="" />
+        <h2>Real Color Mixing</h2>
+        <p>
+          Since our game relies on colors to convey the player’s state, and
+          importantly the mixing of those colors in a natural environment, we
+          felt the colors should mix in an equally natural way. This posed one
+          of our first technical challenges.
+        </p>
+        <p>
+          To demonstrate why, consider the linear interpolation between yellow
+          and blue: yellow’s RGB values are [1, 1, 0]; blue’s RGB values are [0,
+          0, 1]; mix them together evenly and you end up with [0.5, 0.5, 0.5],
+          which is the RGB value for gray. Mixing pigments in the real world
+          would make a green, not gray!
+        </p>
+        <p>
+          As a quick and effective solution to our problem, we found
+          <a href="https://scrtwpns.com/mixbox/">Mixbox</a> by Scrtwpns (check
+          out their online tech demo). Mixbox is a black box solution to
+          inputting RGB values and getting a simulated real-world pigment in RGB
+          out (i.e., yellow + blue → Mixbox → green). Using their Unity package,
+          we developed the HueMix class, which is capable of representing a
+          store of component colors and a resultant output color, allowing us to
+          remove and add one color at a time for cool combinations on the fly!
+        </p>
+        <img src="../imgs/col.png" alt="" />
+        <span
+          >Image Credit:
+          <a href="https://scrtwpns.com/mixbox/"
+            >https://scrtwpns.com/mixbox/</a
+          ></span
+        >
+        <h2>Levels & Feedback</h2>
+        <p>
+          The development of a variety of levels allowed us to showcase our
+          progress during playtests. Player feedback highlighted the need for
+          improved camera controls and more effective onboarding strategies.
+        </p>
+        <p>
+          We also gained a valuable piece of insight from this round of
+          playtesting. We didn’t notice our camera was y-inverted until the
+          major playtest, so everyone was commenting on something that could’ve
+          been an easy fix, taking attention away from more important parts of
+          the game. The insight we gathered is that we should get some light
+          external feedback before a major playtest to catch some of the smaller
+          issues the team may be blind to. This way playtesters during the
+          larger playtest can focus on other parts of the game.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

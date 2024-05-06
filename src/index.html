@@ -4,13 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <script type="module" src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Salsa&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
-  <body class="bg-mainPage bg-no-repeat bg-cover h-[300vh]">
-    <header>
-      <h1 class="w-full flex justify-center items-center">
-        <img src="./imgs/title.png" alt="" class="w-2/3 mt-16" />
-      </h1>
-    </header>
+  <body class="bg-[#5e491d]">
+    <h1 class="text-2xl flex items-center flex-col text-white font-['Salsa']">
+      <img
+        src="./imgs/title.png"
+        alt=""
+        class="z-20 max-w-full w-[750px] p-4 mt-[4vw]"
+      />
+      - By Team Pastel -
+    </h1>
+    <div class="flex justify-center">
+      <img
+        src="./imgs/slime.png"
+        alt=""
+        class="absolute top-0 left-0 right-0 w-full -z-20 min-w-[500px]"
+      />
+      <img
+        src="./imgs/mainPage.png"
+        alt=""
+        class="absolute top-0 left-0 right-0 w-full -z-10 min-w-[500px]"
+      />
+    </div>
+    <div class="flex justify-center">
+      <section
+        class="bg-yellow-900 shadow-xl p-8 m-4 sm:mx-16 md:mx-30 lg:mx-40 xl:mx-60 2xl:mx-96 max-w-[950px] rounded-lg text-white border-white border-2 mt-[60vw]"
+      >
+        <h1 class="text-2xl mb-4 font-['Salsa']">The Story</h1>
+        <div class="text-xl mb-10">
+          <p class="mb-2">
+            Where has everyone gone? This vibrant forest you call home has grown
+            defensive; paths that were once open are now blocked to you and your
+            kind…
+          </p>
+          <p>
+            You can’t get through this alone and, fortunately, you won’t have
+            to! You play as a slime and you will come across many others of your
+            kind on your journey. Team up with them to mimic the brightly
+            colored flora of the forest and pass unimpeded. In this adventure
+            puzzler, split, mix and match colors to overcome the challenges
+            ahead!
+          </p>
+        </div>
+        <div class="mb-10">
+          <h1 class="text-2xl mb-4 font-['Salsa']">Check out the Game</h1>
+          <a
+            class="p-4 bg-green-600 rounded-sm active:bg-green-800 hover:bg-green-700"
+            href="https://jaredgoronkin.itch.io/between-bough-and-root"
+            target="_blank"
+            >Download (Itch.io)
+            <i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
+        </div>
+        <div class="mb-4">
+          <h1 class="text-2xl mb-4 font-['Salsa']">View our Devlog</h1>
+          <a
+            class="p-4 bg-green-600 rounded-sm active:bg-green-800 hover:bg-green-700"
+            href="./devlog.html"
+          >
+            Devlog
+            <i class="fa-solid fa-envelope-open-text"></i>
+          </a>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

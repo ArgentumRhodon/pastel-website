@@ -4,88 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Team Pastel - Devlog 5</title>
   </head>
   <body>
     <header>
-      <nav class="grid grid-cols-3 bg-green-900 text-white p-4 px-6">
-        <div></div>
-        <p class="text-center text-2xl">Between Root and Bough</p>
-        <div class="w-full flex justify-end">
-          <a href="./" class="">About</a>
+      <div class="flex justify-center p-8 bg-devPage">
+        <img src="./imgs/title.png" alt="" class="max-w-[630px] w-full" />
+      </div>
+      <nav class="flex justify-center items-center">
+        <div class="prose prose-sm lg:prose-lg w-[630px]">
+          <a href="./index.html">Home</a>
+          <i class="fa-solid fa-arrow-right"></i>
+          <a href="./devlog.html">Devlogs</a>
         </div>
       </nav>
     </header>
-    <div class="h-[200px] bg-gray-300 flex justify-center items-center">
-      <h2 class="text-xl">Devlog</h2>
-    </div>
-    <div class="w-full h-full flex items-center justify-center p-10">
-      <ul class="max-w-[1000px] w-full flex flex-col gap-6">
-        <li class="w-full border-solid border-black border-2 rounded-md p-2">
-          <h3 class="mb-2">Devlog 1</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, ea
-            cum, omnis neque, quibusdam fugit itaque earum pariatur vitae libero
-            eligendi. Perspiciatis, consectetur. Modi hic aliquid minus facilis
-            consequuntur praesentium dignissimos neque iure temporibus adipisci,
-            quod sunt nulla aspernatur tenetur ea molestiae aut, amet eius
-            veritatis magni earum eveniet rerum? Facere ipsam nisi nam commodi,
-            at architecto possimus debitis. Expedita nemo quasi sunt placeat
-            itaque ipsa eligendi quo dolore libero officia labore reiciendis
-            ducimus nesciunt ad deserunt velit et eos, soluta corrupti
-            laudantium. Saepe a laborum quam est! Mollitia, sit natus porro qui
-            doloremque culpa est vel atque neque eaque!
-          </p>
-        </li>
-        <li class="w-full border-solid border-black border-2 rounded-md p-2">
-          <h3 class="mb-2">Devlog 2</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, ea
-            cum, omnis neque, quibusdam fugit itaque earum pariatur vitae libero
-            eligendi. Perspiciatis, consectetur. Modi hic aliquid minus facilis
-            consequuntur praesentium dignissimos neque iure temporibus adipisci,
-            quod sunt nulla aspernatur tenetur ea molestiae aut, amet eius
-            veritatis magni earum eveniet rerum? Facere ipsam nisi nam commodi,
-            at architecto possimus debitis. Expedita nemo quasi sunt placeat
-            itaque ipsa eligendi quo dolore libero officia labore reiciendis
-            ducimus nesciunt ad deserunt velit et eos, soluta corrupti
-            laudantium. Saepe a laborum quam est! Mollitia, sit natus porro qui
-            doloremque culpa est vel atque neque eaque!
-          </p>
-        </li>
-        <li class="w-full border-solid border-black border-2 rounded-md p-2">
-          <h3 class="mb-2">Devlog 3</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, ea
-            cum, omnis neque, quibusdam fugit itaque earum pariatur vitae libero
-            eligendi. Perspiciatis, consectetur. Modi hic aliquid minus facilis
-            consequuntur praesentium dignissimos neque iure temporibus adipisci,
-            quod sunt nulla aspernatur tenetur ea molestiae aut, amet eius
-            veritatis magni earum eveniet rerum? Facere ipsam nisi nam commodi,
-            at architecto possimus debitis. Expedita nemo quasi sunt placeat
-            itaque ipsa eligendi quo dolore libero officia labore reiciendis
-            ducimus nesciunt ad deserunt velit et eos, soluta corrupti
-            laudantium. Saepe a laborum quam est! Mollitia, sit natus porro qui
-            doloremque culpa est vel atque neque eaque!
-          </p>
-        </li>
-        <li class="w-full border-solid border-black border-2 rounded-md p-2">
-          <h3 class="mb-2">Devlog 4</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, ea
-            cum, omnis neque, quibusdam fugit itaque earum pariatur vitae libero
-            eligendi. Perspiciatis, consectetur. Modi hic aliquid minus facilis
-            consequuntur praesentium dignissimos neque iure temporibus adipisci,
-            quod sunt nulla aspernatur tenetur ea molestiae aut, amet eius
-            veritatis magni earum eveniet rerum? Facere ipsam nisi nam commodi,
-            at architecto possimus debitis. Expedita nemo quasi sunt placeat
-            itaque ipsa eligendi quo dolore libero officia labore reiciendis
-            ducimus nesciunt ad deserunt velit et eos, soluta corrupti
-            laudantium. Saepe a laborum quam est! Mollitia, sit natus porro qui
-            doloremque culpa est vel atque neque eaque!
-          </p>
-        </li>
-      </ul>
-    </div>
+    <main class="flex justify-center my-8">
+      <section class="prose prose-sm lg:prose-lg w-full flex flex-col gap-4">
+        <h1>Devlogs</h1>
+        <ul class="p-0 mt-0">
+          <li class="">
+            <a href="devlogs/devlog6.html" class="text-2xl"
+              >Devlog 6: Winding Down</a
+            >
+            <p class="not-prose text-gray-500">(4/28 - 5/5)</p>
+          </li>
+          <li>
+            <a href="devlogs/devlog5.html" class="text-2xl"
+              >Devlog 5: Pivot & EDGE</a
+            >
+            <p class="not-prose text-gray-500">(4/7 - 4/21)</p>
+          </li>
+          <li>
+            <a href="devlogs/devlog4.html" class="text-2xl"
+              >Devlog 4: MAGIC & More</a
+            >
+            <p class="not-prose text-gray-500">(3/17 - 3/31)</p>
+          </li>
+          <li>
+            <a href="devlogs/devlog3.html" class="text-2xl"
+              >Devlog 3: Slime Time</a
+            >
+            <p class="not-prose text-gray-500">(2/18 - 3/3)</p>
+          </li>
+          <li>
+            <a href="devlogs/devlog2.html" class="text-2xl"
+              >Devlog 2: Getting Going</a
+            >
+            <p class="not-prose text-gray-500">(1/28 - 2/11)</p>
+          </li>
+          <li>
+            <a href="devlogs/devlog1.html" class="text-2xl"
+              >Devlog 1: Pre-Class Discussions</a
+            >
+            <p class="not-prose text-gray-500">(12/28 - 1/12)</p>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>

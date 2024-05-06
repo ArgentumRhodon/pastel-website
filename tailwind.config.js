@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        mainPage: "url('/src/imgs/mainPage.png')",
+        mainPage: "url('./src/imgs/mainPage.png')",
+        devPage: "url('./src/imgs/devPage.png')",
+      },
+      screens: {
+        "5xl": "2150px",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
